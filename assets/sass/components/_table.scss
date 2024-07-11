@@ -1,0 +1,27 @@
+@use "../utils/variables" as v;
+
+table {
+    width: 100%;
+}
+
+thead {
+    padding: 1px;
+    background: v.$backgroundDarker;
+    font-family: v.$fontHeader;
+}
+
+tbody {
+    tr {
+        &:nth-of-type(even) {
+            background: v.$backgroundDarker;
+        }
+
+        &:nth-of-type(odd) {
+            background: v.$backgroundLighter;
+        }
+    }
+}
+
+td {
+    font-family: v.$fontParagraph;
+}

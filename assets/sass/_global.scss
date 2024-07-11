@@ -35,10 +35,10 @@ code {
 blockquote {
   font-family: v.$fontItalic;
   font-size: 110%;
-  border-left: 3px solid v.$red;
+  border-left: 2px solid v.$red;
   line-height: 1.8em;
-  margin: 1.1em -4em;
-  padding: 1em 2em;
+  margin: 1.1em -1em;
+  padding: 0.5em 1em;
   position: relative;
   transition: .2s border ease-in-out;
   z-index: 0;

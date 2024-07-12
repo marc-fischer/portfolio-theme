@@ -1,19 +1,36 @@
 @use "../utils/variables" as v;
 
-.postDate {
-  float: right;
+.postDate {  
+  @media only screen and (min-width: v.$breakLarge) {
+    float:right;
+  }
+  @media screen and (max-width: 680px) {
+    //content: "\A\A";
+    visibility: hidden;
+  }
   color: v.$white;
 }
 
 .postTitle {
-  
-  @include v.primary-color;
+  display: block;
+  @media only screen and (min-width: v.$breakLarge) {
+    min-width: v.$width * 0.8;
+  }
 
+  &::first-letter {
+    text-decoration: underline;
+    text-decoration-color: v.$electric-blue;
+  }
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: v.$electric-blue;
+  }
   text-decoration: none;
   text-transform: capitalize;
   font-family: v.$fontHeader;
-  font-size: 1.2em;
+  font-size: v.$h5;
   float: left;
+ 
 }
 
 .postHeader {
@@ -22,6 +39,7 @@
 
 .postsList {
   margin-top: 20px;
+  min-width: 100%;
 }
 
 .postListItem {
@@ -49,16 +67,4 @@
   text-decoration: none;
 }
 
-a,
-a:link,
-a:visited,
-a:active{
-  color: v.$white;
-  text-decoration: underline;
-  text-decoration-color: v.$electric-blue;
-}
 
-a:hover{
-  text-decoration: underline;
-  text-decoration-color: v.$red;
-}

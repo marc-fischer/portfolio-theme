@@ -1,7 +1,7 @@
 <header class="headerWrapper">
     <div class="header">
-        <div>
-            <a class="terminal" href="{{ .Site.BaseURL }}">
+        <div class="pageTitle">
+            <a class="pageTitle" href="{{ .Site.BaseURL }}">
                 <span>{{ .Site.Title }}</span>
             </a>
         </div>
@@ -11,9 +11,7 @@
             <ul>
                 {{ range .Site.Menus.header }}
                 <li>
-                    <a href="{{ .URL | absURL }}" title="{{ .Title }}" >
-                        {{- .Name -}}
-                    </a>
+                    <a href="{{ .URL | absURL }}" title="{{ .Title }}" >{{- .Name -}}</a>
                 </li>
                 {{ end }}
             </ul>

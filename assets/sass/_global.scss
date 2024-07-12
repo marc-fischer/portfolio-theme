@@ -8,10 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-a {
-  @include v.primary-color;
+  
 }
 
 pre code {
@@ -44,11 +41,7 @@ blockquote {
   z-index: 0;
 }
 
-@for $i from 1 through 6 {
-  h#{$i} {
-    font-family: v.$fontHeader;
-  }
-}
+
 
 @-ms-viewport{
   width: device-width;

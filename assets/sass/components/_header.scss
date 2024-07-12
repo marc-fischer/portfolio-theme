@@ -21,35 +21,29 @@
 
 .headerLinks {
   ul {
+    font-size: v.$h6;
     list-style: none;
     padding: 0;
     margin: 0;
     li {
       display: inline;
       margin: 5px;
-      a {
-        color: v.$white;
-        text-decoration: none;
-        &:hover{
-          text-decoration: underline;
-          text-decoration-color: v.$electric-blue
-        }
-      }
     }
   }
 }
 
-.terminal {
-    a,
-    a:visited,
-    a:active {
-      text-decoration: none;
-    }
-    &:hover {
-    color: v.$white;
+
+.pageTitle{
+  font-size: v.$h5;
+  &::first-letter{
+    text-decoration: underline;
+    text-decoration-color: v.$red;
+  }
+  &:hover {
     text-decoration: none;
   }
 }
+
 
 .hamb {
   cursor: pointer;

@@ -1,0 +1,16 @@
+@use "../utils/variables" as v;
+
+a {
+    color: v.$white;
+    text-decoration: none;
+    display: inline-block;
+    &::first-letter {
+      text-decoration: underline;
+      text-decoration-color: v.$electric-blue;
+    }
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: v.$electric-blue;
+    }
+  }
+  
